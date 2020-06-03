@@ -1,0 +1,24 @@
+SQL  Queries 
+
+A)Query for finding nth largest salary along with employee name
+
+declare @n int
+set @n=3
+
+SELECT EmpName,Salary,EmpId
+FROM
+  (
+   SELECT emp.EmpName,sal.Salary,sal.EmpId,DENSE_RANK() OVER(ORDER BY Salary desc) As RowNum
+   FROM Salary sal
+   inner join employee emp on
+   emp.EmpID=sal.EmpID
+   ) As A
+WHERE A.RowNum=@n
+
+
+
+
+
+B)Query for updating salary of employees to 5000 whose age is 30+
+update Salary set Salary=5000
+where EmpId in(select EmpID from employee where datediff(year,Date_of_birth,cast(getdate() as date))>30)

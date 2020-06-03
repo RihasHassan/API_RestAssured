@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="6" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10308" started-at="2020-06-03T13:58:51Z" finished-at="2020-06-03T13:59:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10308" started-at="2020-06-03T13:58:51Z" finished-at="2020-06-03T13:59:01Z">
+      <class name="MovieApi.LatestMovie">
+        <test-method status="PASS" signature="Status()[pri:1, instance:MovieApi.LatestMovie@5c7fa833]" name="Status" duration-ms="3552" started-at="2020-06-03T19:28:51Z" finished-at="2020-06-03T19:28:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Status -->
+        <test-method status="FAIL" signature="releaseDate()[pri:2, instance:MovieApi.LatestMovie@5c7fa833]" name="releaseDate" duration-ms="2104" started-at="2020-06-03T19:28:54Z" finished-at="2020-06-03T19:28:57Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Release date Contains Null Value expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Release date Contains Null Value expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at MovieApi.LatestMovie.releaseDate(LatestMovie.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- releaseDate -->
+        <test-method status="PASS" signature="movieTitle()[pri:3, instance:MovieApi.LatestMovie@5c7fa833]" name="movieTitle" duration-ms="983" started-at="2020-06-03T19:28:57Z" finished-at="2020-06-03T19:28:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- movieTitle -->
+        <test-method status="PASS" signature="paytmMovieCode()[pri:4, instance:MovieApi.LatestMovie@5c7fa833]" name="paytmMovieCode" duration-ms="724" started-at="2020-06-03T19:28:57Z" finished-at="2020-06-03T19:28:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paytmMovieCode -->
+        <test-method status="PASS" signature="ExcelFileGenration()[pri:5, instance:MovieApi.LatestMovie@5c7fa833]" name="ExcelFileGenration" duration-ms="1182" started-at="2020-06-03T19:28:58Z" finished-at="2020-06-03T19:28:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExcelFileGenration -->
+        <test-method status="PASS" signature="LanguageFormat()[pri:6, instance:MovieApi.LatestMovie@5c7fa833]" name="LanguageFormat" duration-ms="1739" started-at="2020-06-03T19:28:59Z" finished-at="2020-06-03T19:29:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LanguageFormat -->
+      </class> <!-- MovieApi.LatestMovie -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
